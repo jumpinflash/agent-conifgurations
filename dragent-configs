@@ -1,0 +1,54 @@
+Monitor Only (dragent.yaml)
+commandlines_capture:
+  enabled: false
+drift_control:
+  enabled: false
+drift_killer:
+  enabled: false
+falcobaseline:
+  enabled: false
+feature:
+  mode: monitor
+memdump:
+  enabled: false
+network_topology:
+  enabled: false
+secure_audit_streams:
+  enabled: false
+security:
+  enabled: false
+  k8s_audit_server_enabled: false
+
+
+Secure Only (dragent.yaml)
+app_checks_enabled: false
+feature:
+  mode: secure
+jmx:
+  enabled: false
+prometheus:
+  enabled: false
+statsd:
+  enabled: false
+
+
+Secure Light (dragent.yaml)
+app_checks_enabled: false
+drift_control:
+  enabled: false
+drift_killer:
+  enabled: false
+falcobaseline:
+  enabled: false
+feature:
+  mode: secure_light
+jmx:
+  enabled: false
+memdump:
+  enabled: false
+network_topology:
+  enabled: false
+prometheus:
+  enabled: false
+statsd:
+  enabled: false
