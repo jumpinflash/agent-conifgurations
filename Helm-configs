@@ -16,3 +16,14 @@ agent:
     settings:
       feature:
         mode: secure
+
+Secure Light (Helm)
+agent:
+  monitor:
+    enabled: false
+  secure:
+    enabled: true
+  sysdig:
+    settings:
+      feature:
+        mode: secure_light
