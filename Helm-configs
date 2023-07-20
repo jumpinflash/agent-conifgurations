@@ -1,0 +1,18 @@
+Monitor Only (Helm)
+agent:
+  monitor:
+    enabled: true
+  secure:
+    enabled: false
+
+
+Secure Only (Helm)
+agent:
+  monitor:
+    enabled: false
+  secure:
+    enabled: true
+  sysdig:
+    settings:
+      feature:
+        mode: secure
